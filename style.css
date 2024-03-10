@@ -1,19 +1,18 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.container
-{
+
+.container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(135deg, lightseagreen, yellow);
     padding: 10px;
 }
-.todo-app
-{
+
+.todo-app {
     width: 100%;
     max-width: 540px;
     background-color: #fff;
@@ -21,20 +20,20 @@
     padding: 40px 30px;
     border-radius: 10px;
 }
-.todo-app h2
-{
+
+.todo-app h2 {
     color: #222;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.todo-app h2 img
-{
+
+.todo-app h2 img {
     width: 30px;
     margin-left: 10px;
 }
-.row
-{
+
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,16 +42,16 @@
     padding-left: 20px;
     margin-bottom: 20px;
 }
-input
-{
+
+input {
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
 }
-button
-{
+
+button {
     border: 0;
     outline: 0;
     padding: 16px 50px;
@@ -62,8 +61,8 @@ button
     cursor: pointer;
     border-radius: 40px;
 }
-ul li
-{
+
+ul li {
     padding: 12px 8px 12px 50px;
     list-style: none;
     font-size: 17px;
@@ -72,8 +71,7 @@ ul li
     position: relative;
 }
 
-ul li::before
-{
+ul li::before {
     content: ' ';
     position: absolute;
     height: 24px;
@@ -85,18 +83,17 @@ ul li::before
     left: 8px;
     top: 11px;
 }
-ul .checked
-{
+
+ul .checked {
     text-decoration: line-through;
     color: #555;
 }
-ul .checked::before
-{
+
+ul .checked::before {
     background-image: url(images/checked.png);
 }
 
-ul li span
-{
+ul li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -108,30 +105,108 @@ ul li span
     text-align: center;
     border-radius: 50px;
 }
-ul li span:hover
-{
+
+ul li span:hover {
     background: #edeef0;
 }
 
-/* h2
-{
-    font-size: 200px;
-    white-space: nowrap;
-    text-align: center;
-    margin: 100px auto;
-    font-style: italic;
-    position: absolute;
-    left: 10%;
-    z-index: 99;
+@media (max-width:440px) {
+    .todo-app {
+        width: 100%;
+        max-width: 350px;
+        background-color: #fff;
+        margin: 100px auto;
+        padding: 40px 30px;
+        border-radius: 10px;
+    }
+
+    .todo-app h2 {
+        color: #222;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .todo-app h2 img {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 10vw;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+    }
+
+    button {
+        border: 0;
+        outline: 0;
+        padding: 12px 20px;
+        background-color: #ff5945;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+
+    ul li {
+        padding: 12px 8px 12px 50px;
+        list-style: none;
+        font-size: 17px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+    }
+
+    ul li::before {
+        content: ' ';
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background-image: url(images/unchecked.png);
+        background-size: cover;
+        background-position: center;
+        left: 8px;
+        top: 11px;
+    }
+
+    ul .checked {
+        text-decoration: line-through;
+        color: #555;
+    }
+
+    ul .checked::before {
+        background-image: url(images/checked.png);
+    }
+
+    ul li span {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        color: #555;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    ul li span:hover {
+        background: #edeef0;
+    }
+
 }
-h2::before
-{
-    content: ' Happy hours';
-    position: absolute;
-    left: -3%;
-    top: -6%;
-    z-index: -1;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    color: transparent;
-} */
